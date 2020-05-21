@@ -1,0 +1,12 @@
+int Solution::maxProfit(const vector<int> &A) {
+    int ans = 0;
+    int cur = 0;
+    int n = A.size();
+    for(int i=0; i<n-1; i++){
+        cur += A[i+1]-A[i];
+        ans = max(ans, cur);
+        if(cur<0) cur = 0;
+    }
+    return ans;
+}
+
