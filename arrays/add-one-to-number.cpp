@@ -2,6 +2,7 @@ vector<int> Solution::plusOne(vector<int> &A) {
     int n = A.size();
     vector<int> v,ans;
     int c=1, k, r;
+
     for(int i=n-1; i>=0; i--){
         k=A[i]+c;
         c=k/10;

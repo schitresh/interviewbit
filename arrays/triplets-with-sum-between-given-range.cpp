@@ -1,5 +1,6 @@
 int Solution::solve(vector<string> &A) {
     int n = A.size();
+    // sort(A.begin(), A.end(), [](string a, string b){ return stof(a)<stof(b); });
     sort(A.begin(), A.end());
     int l=0, r=n-1;
     
@@ -11,4 +12,3 @@ int Solution::solve(vector<string> &A) {
     }
     return 0;
 }
-
